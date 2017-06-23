@@ -5,6 +5,9 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+.chat-full {
+  height: 75vh;
+}
 .white-text {
 	color: white;
 }
