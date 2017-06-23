@@ -5,6 +5,36 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+.panel-disabled {
+  position: relative;
+}
+.overlay-body {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 50%;
+  height: 25%;
+  transform: translateY(-50%);
+}
+.overlay-message {
+  position: absolute;
+  background: rgba(0, 0, 0, 1);
+  padding: 15px;
+  top: 25%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.panel-overlay {
+  position: absolute;
+  padding: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 10000;
+}
 .chat-full {
   height: 75vh;
 }
