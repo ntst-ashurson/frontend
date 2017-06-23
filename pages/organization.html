@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CareConnect User Provisioning</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/main.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">CareConnect User Provisioning</a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>John Smith</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>John Smith</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <strong>John Smith</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>Read All Messages</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-tasks">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p>
+                                            <strong>Upload TAA PDF</strong>
+                                            <span class="pull-right text-muted">Complete</span>
+                                        </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                <span class="sr-only">Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p>
+                                            <strong>Submit Accounts</strong>
+                                            <span class="pull-right text-muted">Pending</span>
+                                        </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                <span class="sr-only">Pending</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Tasks</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="messages.html">
+                                    <div>
+                                        <i class="fa fa-comment fa-fw"></i> New Message
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="tasks.html">
+                                    <div>
+                                        <i class="fa fa-tasks fa-fw"></i> New Task
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="notifications.html">
+                                    <strong>See All Notifications</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="taa.html"><i class="fa fa-edit fa-fw"></i> TAA</a>
+                            </li>
+                            <li>
+                                <a href="organization.html"><i class="fa fa-table fa-fw"></i> Organization</a>
+                            </li>
+                            <li>
+                                <a href="notifications.html"><i class="fa fa-bell fa-fw"></i> Notifications</a>
+                            </li>
+                            <li>
+                                <a href="messages.html"><i class="fa fa-comments fa-fw"></i> Messages</a>
+                            </li>
+                            <li>
+                                <a href="tasks.html"><i class="fa fa-tasks fa-fw"></i> Tasks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            My Organization
+                            <div class="dropdown pull-right">
+                                <button class="btn btn-xs btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-cog white-text"></i><span class="caret white-text"></span></button></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Import</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Export</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Save</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <th>HISP Environment [Prod]</th>
+                                    <th>Vendor</th>
+                                    <th>Product</th>
+                                    <th>Organization Name</th>
+                                    <th>Last Name</th>
+                                    <th>First Name</th>
+                                    <th>Middle Name</th>
+                                    <th>Credentials</th>
+                                    <th>Suffix</th>
+                                    <th>Specialty</th>
+                                    <th>NPI</th>
+                                    <th>Publish? (Y/N)</th>
+                                    <th>Direct Address</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ac,</td>
+                                        <td>Netsmart</td>
+                                        <td>Nulla</td>
+                                        <td>Orci Adipiscing Incorporated</td>
+                                        <td>Jackson</td>
+                                        <td>Pamela</td>
+                                        <td>Ariana</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>lorem,</td>
+                                        <td>4810730062</td>
+                                        <td>Y</td>
+                                        <td>malesuada.vel.venenatis@quam.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dictum</td>
+                                        <td>Netsmart</td>
+                                        <td>rutrum.</td>
+                                        <td>Quisque Ac Corp.</td>
+                                        <td>Amanda</td>
+                                        <td>Charissa</td>
+                                        <td>Castor</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>felis</td>
+                                        <td>2365268066</td>
+                                        <td>Y</td>
+                                        <td>convallis.in@semperpretiumneque.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ut</td>
+                                        <td>Netsmart</td>
+                                        <td>amet,</td>
+                                        <td>Donec Sollicitudin Associates</td>
+                                        <td>Tobias</td>
+                                        <td>Shafira</td>
+                                        <td>Kendall</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>sed</td>
+                                        <td>1111334122</td>
+                                        <td>Y</td>
+                                        <td>metus.sit.amet@interdumSedauctor.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>malesuada</td>
+                                        <td>Netsmart</td>
+                                        <td>metus</td>
+                                        <td>A Incorporated</td>
+                                        <td>Callum</td>
+                                        <td>Vielka</td>
+                                        <td>Kiara</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>Vivamus</td>
+                                        <td>3445296537</td>
+                                        <td>Y</td>
+                                        <td>scelerisque@arcu.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>magna.</td>
+                                        <td>Netsmart</td>
+                                        <td>ut,</td>
+                                        <td>Tempus Non LLP</td>
+                                        <td>Athena</td>
+                                        <td>Laura</td>
+                                        <td>Freya</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>id,</td>
+                                        <td>7723710493</td>
+                                        <td>Y</td>
+                                        <td>felis.purus.ac@quislectusNullam.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ac,</td>
+                                        <td>Netsmart</td>
+                                        <td>egestas.</td>
+                                        <td>Justo Praesent Institute</td>
+                                        <td>Bradley</td>
+                                        <td>Cynthia</td>
+                                        <td>Shad</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>ligula.</td>
+                                        <td>2796660676</td>
+                                        <td>Y</td>
+                                        <td>ut.odio@non.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>augue</td>
+                                        <td>Netsmart</td>
+                                        <td>tempor</td>
+                                        <td>Vulputate Velit Eu Institute</td>
+                                        <td>Harlan</td>
+                                        <td>Hillary</td>
+                                        <td>Abigail</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>ipsum</td>
+                                        <td>5090239998</td>
+                                        <td>Y</td>
+                                        <td>nibh.enim@ullamcorperDuiscursus.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tortor,</td>
+                                        <td>Netsmart</td>
+                                        <td>neque</td>
+                                        <td>Quam Limited</td>
+                                        <td>Elijah</td>
+                                        <td>Yardley</td>
+                                        <td>Hyatt</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>amet,</td>
+                                        <td>3799463395</td>
+                                        <td>Y</td>
+                                        <td>gravida.sagittis@velarcu.net</td>
+                                    </tr>
+                                    <tr>
+                                        <td>consequat</td>
+                                        <td>Netsmart</td>
+                                        <td>erat</td>
+                                        <td>Sapien Industries</td>
+                                        <td>Leigh</td>
+                                        <td>Freya</td>
+                                        <td>Charde</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>Nunc</td>
+                                        <td>5763356015</td>
+                                        <td>Y</td>
+                                        <td>mauris@nibhlaciniaorci.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Integer</td>
+                                        <td>Netsmart</td>
+                                        <td>diam</td>
+                                        <td>Varius Nam Porttitor Incorporated</td>
+                                        <td>Lester</td>
+                                        <td>Simone</td>
+                                        <td>Nomlanga</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>sit</td>
+                                        <td>5467872962</td>
+                                        <td>Y</td>
+                                        <td>arcu@Cumsociisnatoque.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>amet,</td>
+                                        <td>Netsmart</td>
+                                        <td>Aliquam</td>
+                                        <td>Aliquam Foundation</td>
+                                        <td>Xavier</td>
+                                        <td>Demetria</td>
+                                        <td>Breanna</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>Nunc</td>
+                                        <td>7066562224</td>
+                                        <td>Y</td>
+                                        <td>non@dui.net</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tortor.</td>
+                                        <td>Netsmart</td>
+                                        <td>parturient</td>
+                                        <td>Euismod PC</td>
+                                        <td>Alexandra</td>
+                                        <td>Tamara</td>
+                                        <td>Amery</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>varius</td>
+                                        <td>7543843519</td>
+                                        <td>Y</td>
+                                        <td>risus.Morbi@dolornonummyac.net</td>
+                                    </tr>
+                                    <tr>
+                                        <td>porta</td>
+                                        <td>Netsmart</td>
+                                        <td>netus</td>
+                                        <td>Netus Et Limited</td>
+                                        <td>Wing</td>
+                                        <td>Quemby</td>
+                                        <td>Zenaida</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>sagittis</td>
+                                        <td>1024206049</td>
+                                        <td>Y</td>
+                                        <td>purus.accumsan.interdum@Suspendissetristiqueneque.ca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>morbi</td>
+                                        <td>Netsmart</td>
+                                        <td>condimentum</td>
+                                        <td>Quam Vel Sapien Foundation</td>
+                                        <td>Quentin</td>
+                                        <td>Micah</td>
+                                        <td>Kaye</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>eu,</td>
+                                        <td>4772761494</td>
+                                        <td>Y</td>
+                                        <td>at.libero@Sedeueros.ca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nunc</td>
+                                        <td>Netsmart</td>
+                                        <td>eget,</td>
+                                        <td>Neque Tellus Imperdiet Inc.</td>
+                                        <td>Hedwig</td>
+                                        <td>Chava</td>
+                                        <td>Kirsten</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>facilisi.</td>
+                                        <td>1985786456</td>
+                                        <td>Y</td>
+                                        <td>vel.venenatis@cursusdiamat.net</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mi</td>
+                                        <td>Netsmart</td>
+                                        <td>vitae</td>
+                                        <td>Elit Sed Consequat Foundation</td>
+                                        <td>Barbara</td>
+                                        <td>Indira</td>
+                                        <td>Leigh</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>et</td>
+                                        <td>7539800011</td>
+                                        <td>Y</td>
+                                        <td>eget.varius@sitametfaucibus.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>leo.</td>
+                                        <td>Netsmart</td>
+                                        <td>a</td>
+                                        <td>In Faucibus Orci Ltd</td>
+                                        <td>Noah</td>
+                                        <td>Galvin</td>
+                                        <td>James</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>metus</td>
+                                        <td>8741402906</td>
+                                        <td>Y</td>
+                                        <td>ullamcorper.viverra.Maecenas@Suspendisseseddolor.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nec,</td>
+                                        <td>Netsmart</td>
+                                        <td>eu</td>
+                                        <td>Donec Industries</td>
+                                        <td>Stuart</td>
+                                        <td>Samson</td>
+                                        <td>Cassady</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>Ut</td>
+                                        <td>2199624531</td>
+                                        <td>Y</td>
+                                        <td>et.nunc.Quisque@tempusrisusDonec.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dolor</td>
+                                        <td>Netsmart</td>
+                                        <td>suscipit,</td>
+                                        <td>Amet Consectetuer Adipiscing Corporation</td>
+                                        <td>Michael</td>
+                                        <td>Cameran</td>
+                                        <td>Kelsie</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>nostra,</td>
+                                        <td>8935449169</td>
+                                        <td>Y</td>
+                                        <td>Nulla.eu.neque@tortor.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>magna.</td>
+                                        <td>Netsmart</td>
+                                        <td>libero</td>
+                                        <td>Et Ultrices Posuere Corporation</td>
+                                        <td>Cameron</td>
+                                        <td>Dieter</td>
+                                        <td>Donna</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>sed</td>
+                                        <td>5648930147</td>
+                                        <td>Y</td>
+                                        <td>Morbi@arcuSedeu.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nullam</td>
+                                        <td>Netsmart</td>
+                                        <td>Suspendisse</td>
+                                        <td>Diam Lorem Auctor Corporation</td>
+                                        <td>Josiah</td>
+                                        <td>Igor</td>
+                                        <td>Myra</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>ullamcorper,</td>
+                                        <td>7221772023</td>
+                                        <td>Y</td>
+                                        <td>Cum.sociis@utmi.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>interdum</td>
+                                        <td>Netsmart</td>
+                                        <td>rhoncus.</td>
+                                        <td>Id Ltd</td>
+                                        <td>Lesley</td>
+                                        <td>Judah</td>
+                                        <td>Dorothy</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>metus</td>
+                                        <td>4490323443</td>
+                                        <td>Y</td>
+                                        <td>dis.parturient.montes@ante.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>et</td>
+                                        <td>Netsmart</td>
+                                        <td>lorem</td>
+                                        <td>Feugiat Placerat Velit LLC</td>
+                                        <td>September</td>
+                                        <td>Wynne</td>
+                                        <td>Kato</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>leo.</td>
+                                        <td>1356367602</td>
+                                        <td>Y</td>
+                                        <td>Sed.id.risus@aaliquet.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maecenas</td>
+                                        <td>Netsmart</td>
+                                        <td>dolor</td>
+                                        <td>Neque Nullam Ut Limited</td>
+                                        <td>Anjolie</td>
+                                        <td>Kirestin</td>
+                                        <td>Lynn</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>Nullam</td>
+                                        <td>7380579971</td>
+                                        <td>Y</td>
+                                        <td>lorem.ac@lectusNullamsuscipit.co.uk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nostra,</td>
+                                        <td>Netsmart</td>
+                                        <td>facilisis</td>
+                                        <td>Vitae Dolor Consulting</td>
+                                        <td>Gareth</td>
+                                        <td>Raymond</td>
+                                        <td>Montana</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>dictum.</td>
+                                        <td>3817355856</td>
+                                        <td>Y</td>
+                                        <td>amet@sit.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>montes,</td>
+                                        <td>Netsmart</td>
+                                        <td>sit</td>
+                                        <td>Mauris Sagittis Placerat Inc.</td>
+                                        <td>Rogan</td>
+                                        <td>Donovan</td>
+                                        <td>Travis</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>ultrices,</td>
+                                        <td>2256198816</td>
+                                        <td>Y</td>
+                                        <td>elit.elit.fermentum@nibh.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phasellus</td>
+                                        <td>Netsmart</td>
+                                        <td>pharetra</td>
+                                        <td>Pede Inc.</td>
+                                        <td>Brooke</td>
+                                        <td>Jade</td>
+                                        <td>Katell</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>tempor</td>
+                                        <td>7118332271</td>
+                                        <td>Y</td>
+                                        <td>mus.Proin@volutpat.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>egestas.</td>
+                                        <td>Netsmart</td>
+                                        <td>euismod</td>
+                                        <td>Risus Consulting</td>
+                                        <td>Sandra</td>
+                                        <td>Nell</td>
+                                        <td>Aspen</td>
+                                        <td>MD</td>
+                                        <td>Jr.</td>
+                                        <td>lorem</td>
+                                        <td>6253358085</td>
+                                        <td>Y</td>
+                                        <td>aliquam.adipiscing@acrisus.co.uk</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="btn btn-xs btn-primary" id="add-table-row" type="button">Add Row to Table <i class="fa fa-plus white-text"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+        <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+        <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../dist/js/sb-admin-2.js"></script>
+        <script src="../dist/js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                var editor = $('#dataTables-example').DataTable({
+                    responsive: true
+                });
+                $('#dataTables-example').on( 'click', 'tbody td', function (e) {
+                    console.log(editor.cell(this).edit());
+                });
+            });
+        </script>
+    </body>
+
+    </html>
